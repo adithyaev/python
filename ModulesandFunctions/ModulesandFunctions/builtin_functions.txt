@@ -1,0 +1,62 @@
+Microsoft Windows [Version 10.0.19045.3693]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\4 WaY>python
+Python 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os
+>>> os.name
+'nt'
+>>> os.getcwd()
+'C:\\Users\\4 WaY'
+>>> os.mkdir('test')
+>>> os.rmdir('test')
+>>> os.chdir('D:\\')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\'
+>>> import sys
+>>> print(sys.path)
+['', 'C:\\Users\\4 WaY\\AppData\\Local\\Programs\\Python\\Python312\\python312.zip', 'C:\\Users\\4 WaY\\AppData\\Local\\Programs\\Python\\Python312\\DLLs', 'C:\\Users\\4 WaY\\AppData\\Local\\Programs\\Python\\Python312\\Lib', 'C:\\Users\\4 WaY\\AppData\\Local\\Programs\\Python\\Python312', 'C:\\Users\\4 WaY\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages']
+>>> print(sys.version)
+3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]
+>>> print(sys.maxsize)
+9223372036854775807
+>>> import math
+>>> math.pi
+3.141592653589793
+>>> math.e
+2.718281828459045
+>>> math.h
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'math' has no attribute 'h'
+>>> math.radians(30)
+0.5235987755982988
+>>> math.cos(0)
+1.0
+>>> mth.sin(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'mth' is not defined. Did you mean: 'math'?
+>>> math.sin(0)
+0.0
+>>> math.cos(90)
+-0.4480736161291701
+>>> math.pow(2,4)
+16.0
+>>> math.sqrt(7)
+2.6457513110645907
+>>> math.sqrt(16)
+4.0
+>>> math.ceil(6.8)
+7
+>>> math.floor(6.8)
+6
+>>> print(round(6.8))
+7
+>>> print(round(6.3))
+6
+>>> sys.exit()
+
+C:\Users\4 WaY>

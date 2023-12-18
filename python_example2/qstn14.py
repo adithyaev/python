@@ -1,0 +1,19 @@
+def is_prime(number):
+    if number < 2:
+        return False
+    for i in range(2, int(number**0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
+
+def find_primes_in_range(start, end):
+    prime_numbers = [num for num in range(start, end + 1) if is_prime(num)]
+    return prime_numbers
+
+
+start_range = 1
+end_range = 100
+
+prime_numbers = find_primes_in_range(start_range, end_range)
+print(f"Prime numbers between {start_range} and {end_range}:")
+print(prime_numbers)
